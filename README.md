@@ -80,17 +80,24 @@ markdown是一种轻量级标记语言，使用易读易写的纯文本格式编
 ![](http://upload-images.jianshu.io/upload_images/4669529-5efd7b67873735c6.png?imageMogr2/auto-orient/strip%7CimageView2/2)
 
 - ## 表格
+```
 
-\| 表头 \| 表头\| 表头 \|
+| 表头 | 表头| 表头 |
+
 | --- | --- | --- |
-| 内容 | 内容 | 内容 |
-| 内容 | 内容 | 内容 |
+
 | 内容 | 内容 | 内容 |
 
+| 内容 | 内容 | 内容 |
+
+| 内容 | 内容 | 内容 |
+
+```
 ![](http://upload-images.jianshu.io/upload_images/4669529-6ff7ff96cca44721.png?imageMogr2/auto-orient/strip%7CimageView2/2)
 - ## 粗体、斜体
 
 > \*\*粗体\*\*
+
 > \*斜体\*
 
 ![](http://upload-images.jianshu.io/upload_images/4669529-12466c1ae0ed692d.png?imageMogr2/auto-orient/strip%7CimageView2/2)
