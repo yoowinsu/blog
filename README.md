@@ -43,21 +43,22 @@ markdown是一种轻量级标记语言，使用易读易写的纯文本格式编
 
 
 - ## 引用
-#### 文本引用
+- #### 文本引用
 > \> 文本内容
 
 ![](http://upload-images.jianshu.io/upload_images/4669529-bda69f9a9615f145.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### 代码引用
-##### 单行
+- #### 代码引用
+- ##### 单行
 单行代码的行首和行尾都是“`”
 
 > \`var a=123;`
 
+
 ![](http://upload-images.jianshu.io/upload_images/4669529-c624dfe5e430f420.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-##### 多行
+- ##### 多行
 多行代码的首行和末行都是“```”
-```
+\```
 var a=123;
 var b=321;
 ```
