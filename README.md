@@ -85,13 +85,13 @@ markdown是一种轻量级标记语言，使用易读易写的纯文本格式编
 
 > \| --- \| --- \| --- \|
 
-| 内容 | 内容 | 内容 |
+> \| 内容 \| 内容 \| 内容 \|
 
-| 内容 | 内容 | 内容 |
+> \| 内容 \| 内容 \| 内容 \|
 
-| 内容 | 内容 | 内容 |
+> \| 内容 \| 内容 \| 内容 \|
 
-```
+
 ![](http://upload-images.jianshu.io/upload_images/4669529-6ff7ff96cca44721.png?imageMogr2/auto-orient/strip%7CimageView2/2)
 - ## 粗体、斜体
 
