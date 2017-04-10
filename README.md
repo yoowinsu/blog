@@ -60,9 +60,12 @@ markdown是一种轻量级标记语言，使用易读易写的纯文本格式编
 多行代码的首行和末行都是“```”
 
 > \```
-var a=123;
-var b=321;
-\```
+
+> var a=123;
+
+> var b=321;
+
+> \```
 
 
 ![](http://upload-images.jianshu.io/upload_images/4669529-374edb9b511b7ef5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
