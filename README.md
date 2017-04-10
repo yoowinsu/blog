@@ -71,13 +71,11 @@ markdown是一种轻量级标记语言，使用易读易写的纯文本格式编
 ![](http://upload-images.jianshu.io/upload_images/4669529-374edb9b511b7ef5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - ## 链接、图片
-```
 
- [显示内容](链接地址)
+> [显示内容](链接地址)
 
- ![](图片地址)
+> ![](图片地址)
  
-```
 
 ![](http://upload-images.jianshu.io/upload_images/4669529-5efd7b67873735c6.png?imageMogr2/auto-orient/strip%7CimageView2/2)
 
