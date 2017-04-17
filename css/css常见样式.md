@@ -1,5 +1,5 @@
 ## 块级元素和行内元素分别有哪些？动手测试并列出4条以上的特性区别
-[简书-行内元素和块元素](http://www.jianshu.com/p/950697b69b45)
+[行内元素和块元素](http://www.jianshu.com/p/950697b69b45)
 ## 什么是 CSS 继承? 哪些属性能继承，哪些不能？
 css继承就是子标签继承了上级标签的CSS样式的属性。
 - 可继承的属性：font-size，font-style，font-family，font-weight，text-align，text-indent，color，visibility；
