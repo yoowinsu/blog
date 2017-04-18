@@ -23,7 +23,7 @@
 <input type="url"> 用于应该包含 URL 地址的输入字段
 
 ```
-#post 和 get 方式的区别？
+# post 和 get 方式的区别？
 - GET
 1.从指定的资源请求数据，基本上用于从服务器获得（取回）数据
 2.GET 方法可能返回缓存数据
@@ -37,7 +37,7 @@
 
 ![post和get区别](http://upload-images.jianshu.io/upload_images/4669529-45d19e5a168d85ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#在input里，name 有什么作用？
+# 在input里，name 有什么作用？
 如果要正确地被提交，每个输入字段必须设置一个 name 属性。name的值在提交的数据中相当于一个key值，是不可或缺的，用户输入的值相当于value，key和value是对应的
 # radio 如何 分组?
 name的值相同的话会被浏览器认定为同一组单选按钮
