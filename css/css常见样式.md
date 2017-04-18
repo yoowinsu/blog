@@ -1,5 +1,3 @@
-## 块级元素和行内元素分别有哪些？动手测试并列出4条以上的特性区别
-[行内元素和块元素](http://www.jianshu.com/p/950697b69b45)
 ## 什么是 CSS 继承? 哪些属性能继承，哪些不能？
 css继承就是子标签继承了上级标签的CSS样式的属性。
 - 可继承的属性：font-size，font-style，font-family，font-weight，text-align，text-indent，color，visibility；
@@ -18,7 +16,7 @@ css继承就是子标签继承了上级标签的CSS样式的属性。
 
 ## 用 CSS 实现一个三角形
 
-[三角形](http://js.jirengu.com/gorihirexo/1/)
+[三角形](https://yoowinsu.github.io/demos/just-demos/%E4%B8%89%E8%A7%92%E5%BD%A2demo.html)
 
 ## 单行文本溢出加 ...如何实现?
 ```
@@ -54,14 +52,6 @@ text-align: center是让行内元素水平居中。一般作用于文本元素�
 
 ## *{ box-sizing: border-box;}的作用是什么？
 作用是盒模型采取IE盒模型，设置盒模型的宽度是包括border和padding以及content的宽度。
-
-## line-height: 2和line-height: 200%有什么区别?
-line-height: 2和line-height: 200%是有区别的。
-两个属性设置给具体的某一个元素时是没有区别的，当父元素设置这两个属性后，其子元素会有不同的表现：
-- line-height: 200%；父元素设置这个属性后，其所有子元素的行高都是具体的值，即父元素字体大小的200%。下图可看出子元素的行高都一致。
-<img src="/uploads/default/original/2X/e/e17200a3011bfb320ed3725b3a5b8639e406ec55.jpg" width="690" height="360">
-- line-height: 2；父元素设置这个属性后，其所有子元素的行高都是自身字体大小的2倍。下图可看出子元素的行高都是不一致的。
-<img src="/uploads/default/original/2X/1/18076ddeb9e0c236cc1af551b75dbb9c9445ab18.jpg" width="690" height="448">
 
 ## inline-block有什么特性？如何去除缝隙？高度不一样的inline-block元素如何顶端对齐?
 - inline-block可以设置宽高以及内外边距，不占据整行位置，宽度有内容撑开。
