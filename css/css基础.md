@@ -41,6 +41,3 @@ http://cdn.jirengu.com/kejian1/8-1.png /*指定网络图片的地址，属于网
 - 属性值是0的省略单位
 - 尽可能的复用样式
 - 复合样式可以提高编码效率
-
-# 截图介绍 chrome 开发者工具的功能区
-![开发者工具的功能区](https://jscode.me/uploads/default/original/2X/b/b3e89adb120bd69521fe1edc88304552b2e4f3c7.jpg)
