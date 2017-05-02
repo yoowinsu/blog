@@ -56,31 +56,5 @@ printPeopleInfo('Byron', 26);//Byron今年26岁了
 printPeopleInfo('yoowin', 25,'男');//yoowin今年25岁了，是个男生
 ```
 
-
-
-
-<script>
-        //js是不支持重载的，通过但是arguments以及prototype可以实现重载和继承的效果：
-        //1，通过arguments对象，去判断函数的参数个数：
-		
-		```
-        function fn(){
-            if(arguments.length==1){
-               console.log(arguments[0]+10);
-            }else if(arguments.length==2){
-               console.log(arguments[0]+ arguments[1]);
-            }
-        }
-        fn(10); //outputs 20
-        fn(20,30); //outputs 50
-		```
-		```
-		function foo(){ 
-			for(var i=0;i<arguments.length;i++){
-				var txt='第'+(i+1)+'个参数的数据类型是：'+typeof(arguments[i]);
-				console.log(txt);
-			}
-		}
-		```
    
 **开发人员定义的函数都可以接受任意个数的参数（根据NetScript 文档，最多能接受25个） ，而不会引发错误，任何遗漏的参数都会用undefined 代替，多余的参数被将忽略。**
