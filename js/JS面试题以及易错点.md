@@ -48,13 +48,13 @@ for(i=0;i<arr.length;i++)
 
 ```
 var obj = {
- name: 'hunger', 
+ name: 'yoowin', 
  sex: 'male', 
  age: 28 
 }
 for(b in obj)
 {console.log(obj[b])}
-//hunger male 28
+//yoowin male 28
 ```
 
 ## 以下代码输出结果是? 为什么
@@ -113,18 +113,18 @@ num()
 		console.log('name', name);
 	}
 
-    getInfo('饥人谷', 2, '男');
-	//name:饥人谷
+    getInfo('paul', 2, '男');
+	//name:paul
 	//age:2
 	//sex:男
-	//['饥人谷', 2, '男']
+	//['paul', 2, '男']
 	//name valley
 	
-	getInfo('小谷', 3);
-	//name:小谷
+	getInfo('小苏', 3);
+	//name:小苏
 	//age:3
 	//sex:undefined
-	//['小谷', 3]
+	//['小苏', 3]
 	//name valley
 	
 	getInfo('男');
@@ -273,7 +273,7 @@ console.log(obj1 == obj2);//true   obj1内存地址是obj2传递的，所以相�
 ```
 var a = 1
 var b = 2
-var c = { name: '饥人谷', age: 2 }
+var c = { name: 'yoowinsu', age: 2 }
 var d = [a, b, c]
 
 var aa = a
@@ -296,7 +296,7 @@ console.log(dd) //[1,2,{name: 'hello', age: 3}]  d对象中的a、b是值传递�
 
 ```
 var a = 1
-var c = { name: 'jirengu', age: 2 }
+var c = { name: 'yoowinsu', age: 2 }
 
 function f1(n){
   ++n
@@ -311,7 +311,7 @@ f1(c.age)
 console.log(a) 
 //1  调用f1函数默认把a值传递给n，改变n的值a不受影响，所以打印结果还是1
 console.log(c) 
-//name: 'jirengu', age: 3 
+//name: 'yoowinsu', age: 3 
 //调用f2函数是传址传递， ++obj.age会改变age的值为3
 //调用f1函数默认把c.age值传递给n，改变n的值c.age不受影响，所以打印结果还是3
 
@@ -346,4 +346,139 @@ function filter(arr){
 var arr2 = filter(arr)
 console.log(arr2) // [3,1,2]
 console.log(arr)  // [3,1,0,-1,-2,2,-5]
+```
+
+# 字符串以及JSON
+## 使用数组拼接出如下字符串
+
+```
+var prod = {
+    name: '女装',
+    styles: ['短款', '冬季', '春装']
+};
+function getTplStr(data){
+	var str="<dl class=\"product\"><dt>"+data.name+"</dt><dd>"+data.styles[0]+"</dd><dd>"+data.styles[1]+"</dd><dd>"+data.styles[2]+"</dd></dl>"
+	return str;
+};
+var result = getTplStr(prod);  //result为下面的字符串
+console.log(result);
+```
+```
+<dl class="product">
+    <dt>女装</dt>
+    <dd>短款</dd>
+    <dd>冬季</dd>
+    <dd>春装</dd>
+</dl>
+```
+
+## 写出两种以上声明多行字符串的方法
+- 字符串拼接
+
+```
+var a="ab"
++"cd"
++"ef";
+```
+- 转义
+
+```
+var a="ab \
+cd \
+ef";
+```
+
+## 补全如下代码,让输出结果为字符串: hello\\yoowin
+
+```
+var str = "hello\\\\yoowin"
+console.log(str)
+```
+
+## 以下代码输出什么?为什么
+
+```
+var str = 'yoowinsu\nnice'
+console.log(str.length)
+//13
+//\n是换行符，算一个字符，总共13个字符
+```
+
+## 写一个函数，判断一个字符串是回文字符串，如 abcdcba是回文字符串, abcdcbb不是
+
+``
+function test(str){
+	if(str == str.split('').reverse().join('')){
+		console.log(str+"字符串是回文字符串")
+	}else{
+		console.log(str+"字符串不是回文字符串")
+	}
+}
+test("abcdcba")
+test("abcdcbb")
+```
+
+## 写一个函数，统计字符串里出现出现频率最多的字符
+
+```
+function max(str){
+  var obj={};
+  for(var i=0;i<str.length;i++){
+    if(obj[str[i]]){
+      ++obj[str[i]];
+    }else{
+      obj[str[i]]=1;
+    }
+  }
+  var max=0;
+  var maxValue;
+  for(var key in obj){
+    if(obj[key]>max){
+      max=obj[key];
+      maxValue=key;
+    }
+  }
+  console.log("出现频率最多的字符："+maxValue+"，出现次数："+max);
+}
+max("ssdcxzzzzzzzzz")
+max("ssxzaaaa")
+```
+
+## 写一个camelize函数，把my-short-string形式的字符串转化成myShortString形式的字符串，如
+
+```
+function camelize(str){
+  var arr=str.split('-')
+  for(var i=1;i<arr.length;i++){
+    arr[i] = arr[i].replace(arr[i].charAt(0),arr[i].charAt(0).toUpperCase());
+  }
+  var newStr=arr.join('');
+  return newStr;
+}
+camelize("background-color") == 'backgroundColor' //true
+camelize("list-style-image") == 'listStyleImage' //true
+```
+
+
+## 写一个 ucFirst函数，返回第一个字母为大写的字符 （***）
+
+```
+function ucFirst(str){
+	var newStr = str.replace(str.charAt(0),str.charAt(0).toUpperCase());
+	return newStr;
+}
+ucFirst("apple") == "Apple" //true
+```
+
+## 写一个函数truncate(str, maxlength), 如果str的长度大于maxlength，会把str截断到maxlength长，并加上...，如
+
+```
+function truncate(str, maxlength){
+	if(str.length>maxlength){
+		str=str.slice(0, maxlength)+"..."; 
+	}
+	return str;
+}
+truncate("hello, this is hunger valley,", 10) == "hello, thi...";
+truncate("hello world", 20) == "hello world"
 ```
