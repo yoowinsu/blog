@@ -105,9 +105,9 @@ element.classList.toggle('abc', boolean);
 
 - 选中li元素
 document.getElementsByTagName('li');
-document.getquerySelectorAll('li');
+document.querySelectorAll('li');
 
 - 选中btn
-document.getElementsByClassName('btn');
-docunment.getquerySelector('.btn');
+document.getElementsByClassName('btn')[0];
+docunment.querySelector('.btn');
 ```
