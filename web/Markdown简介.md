@@ -4,103 +4,119 @@ markdown是一种轻量级标记语言，使用易读易写的纯文本格式编
 
 # markdown语法介绍
 
-- ## 标题
+## 标题
 
-\#和标题内容之间需有空格
+“#”和标题内容之间需有空格
 
-`# 一级标题 对应h1`
+```
+# 一级标题 对应h1
+## 二级标题 对应h2
+### 三级标题 对应h3
+#### 四级标题 对应h4
+##### 五级标题 对应h5
+###### 六级标题 对应h6
+```
 
-`## 二级标题 对应h2`
+## 列表
 
-`### 三级标题 对应h3`
+### 无序列表
 
-`#### 四级标题 对应h4`
+“-”或“*”和列表项之间需有空格
 
-`##### 五级标题 对应h5`
+```
+- 列表1
+- 列表2
+- 列表3
+```
 
-`###### 六级标题 对应h6`
+或者
 
-- ## 列表
-- #### 无序列表
-\#和标题内容之间需有空格
+```
+* 列表1
+* 列表2
+* 列表3
+```
 
-`- 列表1`
+## 有序列表
 
-`- 列表2`
+```
+1.列表
+2.列表
+3.列表
+```
 
-`- 列表3`
+![无序列表和有序列表](https://ooo.0o0.ooo/2017/06/21/5949df7fbcf73.png)
 
-- #### 有序列表
-\#和标题内容之间需有空格
+## 引用
 
-`1. 列表`
+### 文本引用
 
-`2. 列表`
+```
+  > 文本内容
+```
 
-`3. 列表`
+![](https://ooo.0o0.ooo/2017/06/21/5949df7f82c57.png)
 
-![](http://upload-images.jianshu.io/upload_images/4669529-88e545a59ff58bd5.png?imageMogr2/auto-orient/strip%7CimageView2/2)
+### 代码引用
+
+#### 单行
+
+单行代码的行首和行尾都是"`"
+
+```
+`var a=123;`
+```
+
+![](https://ooo.0o0.ooo/2017/06/21/5949df7fa002e.png)
+
+#### 多行
+
+多行代码的首行和末行都是\`\`\`;
+其中，HTML代码在首行的\`\`\`后面写上“HTML”表示为HTML代码，
+CSS代码在首行的\`\`\`后面写上“CSS”表示为CSS代码， 
+JavaScript代码在首行的\`\`\`后面写上“JavaScript”表示为JavaScript代码
 
 
-- ## 引用
-- #### 文本引用
-> \> 文本内容
-
-![](http://upload-images.jianshu.io/upload_images/4669529-bda69f9a9615f145.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-- #### 代码引用
-- ##### 单行
-单行代码的行首和行尾都是“`”
-
-> \`var a=123;\`
-
-
-![](http://upload-images.jianshu.io/upload_images/4669529-c624dfe5e430f420.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-- ##### 多行
-多行代码的首行和末行都是“```”
-
-> \```
-
+> `\``JavaScript
 > var a=123;
-
 > var b=321;
-
-> \```
-
-
-![](http://upload-images.jianshu.io/upload_images/4669529-374edb9b511b7ef5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-- ## 链接、图片
-
-> \[显示内容\]\(链接地址\)
-
-> \!\[\]\(图片地址\)
- 
-
-![](http://upload-images.jianshu.io/upload_images/4669529-5efd7b67873735c6.png?imageMogr2/auto-orient/strip%7CimageView2/2)
-
-- ## 表格
-
-> \| 表头 \| 表头\| 表头 \|
-
-> \| --- \| --- \| --- \|
-
-> \| 内容 \| 内容 \| 内容 \|
-
-> \| 内容 \| 内容 \| 内容 \|
-
-> \| 内容 \| 内容 \| 内容 \|
+```
 
 
-![](http://upload-images.jianshu.io/upload_images/4669529-6ff7ff96cca44721.png?imageMogr2/auto-orient/strip%7CimageView2/2)
-- ## 粗体、斜体
+![](https://ooo.0o0.ooo/2017/06/21/5949df7f9f2b5.png)
 
-> \*\*粗体\*\*
+## 链接、图片
 
-> \*斜体\*
+> \[显示内容\](链接地址)
 
-![](http://upload-images.jianshu.io/upload_images/4669529-12466c1ae0ed692d.png?imageMogr2/auto-orient/strip%7CimageView2/2)
+> \!\[](图片地址)
+
+![](https://ooo.0o0.ooo/2017/06/21/5949df7fdb378.png)
+
+## 表格
+
+> | 表头 | 表头| 表头 |
+
+> | --- | --- | --- |
+
+> | 内容 | 内容 | 内容 |
+
+> | 内容 | 内容 | 内容 |
+
+> | 内容 | 内容 | 内容 |
+
+![](https://ooo.0o0.ooo/2017/06/21/5949df7fbc052.png)
+
+## 粗体、斜体
+
+> \*\*粗体**
+
+> \*斜体*
+
+![](https://ooo.0o0.ooo/2017/06/21/5949df7f9d6f4.png)
 
 以上是几种常用的的语法。
+
 # 结语
+
 上文难免有纰漏，欢迎大家指正
